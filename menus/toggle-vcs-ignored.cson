@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle toggle-vcs-ignored'
+      'command': 'toggle-vcs-ignored:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'toggle-vcs-ignored'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'toggle-vcs-ignored:toggle'
+        }
+      ]
+    ]
+  }
+]

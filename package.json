@@ -1,0 +1,22 @@
+{
+  "name": "toggle-vcs-ignored",
+  "main": "./lib/toggle-vcs-ignored",
+  "version": "0.0.0",
+  "description": "Enable keyboard shortcut to toggle Exclude VCS Ignored Paths setting",
+  "keywords": [
+    "VCS",
+    "ignored",
+    "VCS ignored",
+    "toggle VCS"
+  ],
+  "activationCommands": {
+    "atom-workspace": "VCS-ignored:toggle"
+  },
+  "repository": "https://github.com/stevgouws/toggle-vcs-ignored",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
