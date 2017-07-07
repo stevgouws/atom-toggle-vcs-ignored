@@ -12,7 +12,7 @@
   "activationCommands": {
     "atom-workspace": "VCS-ignored:toggle"
   },
-  "repository": "https://github.com/stevgouws/toggle-vcs-ignored",
+  "repository": "https://github.com/stevgouws/atom-toggle-vcs-ignored",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
