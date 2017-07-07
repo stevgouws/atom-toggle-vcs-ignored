@@ -27,8 +27,7 @@ module.exports = ToggleVcsIgnored =
   toggle: ->
     excludeVcsIgnoredPaths = atom.config.get "core.excludeVcsIgnoredPaths"
     atom.config.set("core.excludeVcsIgnoredPaths", !excludeVcsIgnoredPaths)
-    @toggleVcsIgnoredView.showMessage(excludeVcsIgnoredPaths)
-    @modalPanel.show()
-    run = () =>
-      @modalPanel.hide()
-    setTimeout(run, 2000)
+    if excludeVcsIgnoredPaths
+      atom.notifications.addWarning("VCS Paths Ignored", {icon: 'circle-slash'})
+    else
+      atom.notifications.addInfo("VCS Paths Searchable", {icon: 'eye'})
