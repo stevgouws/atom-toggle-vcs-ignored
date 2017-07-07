@@ -28,6 +28,6 @@ module.exports = ToggleVcsIgnored =
     excludeVcsIgnoredPaths = atom.config.get "core.excludeVcsIgnoredPaths"
     atom.config.set("core.excludeVcsIgnoredPaths", !excludeVcsIgnoredPaths)
     if excludeVcsIgnoredPaths
-      atom.notifications.addWarning("VCS Paths Ignored", {icon: 'circle-slash'})
-    else
       atom.notifications.addInfo("VCS Paths Searchable", {icon: 'eye'})
+    else
+      atom.notifications.addWarning("VCS Paths Ignored", {icon: 'circle-slash'})
