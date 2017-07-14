@@ -1,7 +1,7 @@
 {
   "name": "toggle-vcs-ignored",
   "main": "./lib/toggle-vcs-ignored",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Enable keyboard shortcut to toggle Exclude VCS Ignored Paths setting",
   "keywords": [
     "VCS",
